@@ -30,6 +30,29 @@ ensemble empirical mode decomposition (EEMD).
 - install using pip (``pip install matplotlib``)
 
 ### Usage
+An simple example is as follows.
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from dagaf import dagaf
+s = np.random.random(1000)
+
+# Plot the data.
+plt.figure()
+plt.plot(s)
+plt.show()
+imf, res = dagaf(s, 4, 1.6, 'd', 'd', 20, 0.001, True)
+```
+The results would show three figures:
+
+<p align="left">
+  1. The computation steps of DAGAF <br />
+  <img src="https://github.com/t22302856/DAGAF/blob/main/Fig_Signal_Ave.jpg" width="450" height="300" alt="Signal_Ave"/> <br />
+  2. The IMF signals <br />
+  <img src="https://github.com/t22302856/DAGAF/blob/main/Fig_imf.jpg" wwidth="450" height="300" alt="imf"/> <br />
+  3. The residual component after DAGAF <br />
+  <img src="https://github.com/t22302856/DAGAF/blob/main/Fig_Signal_Res.jpg" width="450" height="300" alt="Signal_Res"/>  
+</p>
 
 ## DAGAF in Matlab
 
