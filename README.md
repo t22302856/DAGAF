@@ -60,7 +60,17 @@ The results would show three figures:
 
 ## DAGAF in Matlab
 
+### Running environment
+
+- MATLAB 2020b
+
 ### Usage
+A simple example for Matlab.
+
+```
+s = rand(1000,1);
+[imf, res] = dagaf(s, 4, 1.6, 'd', 'd', 20, 0.001);
+```
 
 ## Citation
 If you would like to use this package and function, please cite this paper:
